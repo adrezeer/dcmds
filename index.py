@@ -31,10 +31,11 @@ def print_logo():
 ║  {Fore.GREEN}██████╔╝{Fore.YELLOW}╚█████╔╝{Fore.MAGENTA}██║░╚═╝░██║{Fore.RED}██████╔╝{Fore.BLUE}██████╔╝{Fore.CYAN}  ║
 ║  {Fore.GREEN}╚═════╝░{Fore.YELLOW}░╚════╝░{Fore.MAGENTA}╚═╝░░░░░╚═╝{Fore.RED}╚═════╝░{Fore.BLUE}╚═════╝░{Fore.CYAN}  ║
 ║                                                               ║
-║           {Fore.WHITE}{Style.BRIGHT}D A N R O D E   C M D   S Y S T E M{Fore.CYAN}               ║
+║           {Fore.WHITE}{Style.BRIGHT}D A N R O D E   command   S Y S T E M{Fore.CYAN}               ║
 ║                                                               ║
 ║              {Fore.YELLOW}⚡ Advanced Terminal Interface ⚡{Fore.CYAN}               ║
-║                {Fore.RED}Alpha {Fore.GREEN}Version 0.0.1 {Fore.CYAN}- Build 2026{Fore.CYAN}                ║
+║                  {Fore.RED}Alpha {Fore.GREEN}Version 0.0.1{Fore.CYAN}                          ║
+║              {Fore.CYAN}Build: {Fore.YELLOW}January 29, 2026{Fore.CYAN}                        ║
 ║                    {Fore.YELLOW}[Under Development]{Fore.CYAN}                        ║
 ╚═══════════════════════════════════════════════════════════════╝
 """
@@ -304,14 +305,13 @@ while True:
         print(Fore.WHITE + "System Name:     " + Fore.YELLOW + "DCMDS (Danrode CMD System)")
         print(Fore.WHITE + "Version:         " + Fore.GREEN + "0.0.1")
         print(Fore.WHITE + "Stage:           " + Fore.RED + "Alpha (Under Development)")
-        print(Fore.WHITE + "Build:           " + Fore.CYAN + "2025")
+        print(Fore.WHITE + "Build:           " + Fore.CYAN + "January 29, 2026")
         print(Fore.WHITE + "Creator:         " + Fore.MAGENTA + "Danrode")
         separator()
-        print(Fore.YELLOW + "\n📝 Version Format: Alpha.Beta.Release.Version")
-        print(Fore.WHITE + "• " + Fore.RED + "0" + Fore.WHITE + ".x.x.x = Alpha (Under Development)")
-        print(Fore.WHITE + "• x." + Fore.YELLOW + "0" + Fore.WHITE + ".x.x = Beta Testing")
-        print(Fore.WHITE + "• x.x." + Fore.GREEN + "0" + Fore.WHITE + ".x = Official Release")
-        print(Fore.WHITE + "• x.x.x." + Fore.CYAN + "1" + Fore.WHITE + " = Version Number")
+        print(Fore.YELLOW + "\n📝 Version Format: Alpha.Beta.Version")
+        print(Fore.WHITE + "• " + Fore.RED + "0" + Fore.WHITE + ".x.x = Alpha (Under Development)")
+        print(Fore.WHITE + "• x." + Fore.YELLOW + "0" + Fore.WHITE + ".x = Beta Testing")
+        print(Fore.WHITE + "• x.x." + Fore.GREEN + "1" + Fore.WHITE + " = Version Number (Official Release)")
 
     # ---- DEBUG ----
     elif cmd.lower() == "debug":
@@ -322,7 +322,7 @@ while True:
         print(Fore.CYAN + Style.BRIGHT + "📦 DCMDS INFORMATION:")
         print(Fore.WHITE + "  System Name:    " + Fore.YELLOW + "DCMDS (Danrode CMD System)")
         print(Fore.WHITE + "  Version:        " + Fore.GREEN + "0.0.1 (Alpha)")
-        print(Fore.WHITE + "  Build Date:     " + Fore.CYAN + "2025")
+        print(Fore.WHITE + "  Build Date:     " + Fore.CYAN + "January 29, 2026")
         print(Fore.WHITE + "  Current Path:   " + Fore.YELLOW + (current_path if current_path else "None"))
         
         separator()
@@ -437,6 +437,7 @@ while True:
                         f.write("=" * 50 + "\n\n")
                         f.write(f"Generated: {datetime.datetime.now()}\n\n")
                         f.write(f"DCMDS Version: 0.0.1 (Alpha)\n")
+                        f.write(f"Build Date: January 29, 2026\n")
                         f.write(f"Python Version: {sys.version}\n")
                         f.write(f"OS: {platform.system()} {platform.release()}\n")
                         f.write(f"Processor: {platform.processor()}\n")
@@ -1012,6 +1013,5 @@ while True:
                 print_info(f"💡 Tip: Type 'ls' to see available files and folders")
         else:
             print_error(f"Unknown command: '{cmd}'. Type 'help' for available commands")
-
 
     separator()
