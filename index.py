@@ -34,7 +34,7 @@ def print_logo():
 ║           {Fore.WHITE}{Style.BRIGHT}D A N R O D E   C M D   S Y S T E M{Fore.CYAN}               ║
 ║                                                               ║
 ║              {Fore.YELLOW}⚡ Advanced Terminal Interface ⚡{Fore.CYAN}               ║
-║                {Fore.RED}Alpha {Fore.GREEN}Version 0.0.1 {Fore.CYAN}- Build 2025{Fore.CYAN}                ║
+║                {Fore.RED}Alpha {Fore.GREEN}Version 0.0.1 {Fore.CYAN}- Build 2026{Fore.CYAN}                ║
 ║                    {Fore.YELLOW}[Under Development]{Fore.CYAN}                        ║
 ╚═══════════════════════════════════════════════════════════════╝
 """
@@ -1012,5 +1012,6 @@ while True:
                 print_info(f"💡 Tip: Type 'ls' to see available files and folders")
         else:
             print_error(f"Unknown command: '{cmd}'. Type 'help' for available commands")
+
 
     separator()
